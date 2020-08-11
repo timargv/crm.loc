@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Василий',
             'surname' => 'Пупкин',
             'patronymic' => 'Василевич',
-            'role' => User::ROLE_DIRECTOR,
+            'role' => User::ROLE_ADMIN,
             'email' => 'test@test.ru',
             'password' => Hash::make('password')
         ]);
@@ -27,8 +27,17 @@ class DatabaseSeeder extends Seeder
             'name' => 'Василий2',
             'surname' => 'Пупкин2',
             'patronymic' => 'Василевич2',
-            'role' => User::ROLE_ADMIN,
+            'role' => User::ROLE_DIRECTOR,
             'email' => 'test2@test.ru',
+            'password' => Hash::make('password')
+        ]);
+
+        User::create([
+            'name' => 'Василий3',
+            'surname' => 'Пупкин3',
+            'patronymic' => 'Василевич3',
+            'role' => User::ROLE_COLLABORATOR,
+            'email' => 'test3@test.ru',
             'password' => Hash::make('password')
         ]);
     }

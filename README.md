@@ -19,11 +19,14 @@ php artisan migrate && php artisan db:seed
 
 Эта команда сделает миграцию в базу данных и создать фейковых пользователей
 ____
-###### User 1 = Директор
+###### User 1 = Админ
 email: test@test.ru пароль: password
 
-###### User 2 = Админ
+###### User 2 = Директор
 email: test2@test.ru пароль: password
+
+###### User 3 = Сотрудник
+email: test3@test.ru пароль: password
 
 
 Если возникнут вопросы: tima.rgv@mail.ru
