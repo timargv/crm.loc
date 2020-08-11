@@ -22,5 +22,14 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@test.ru',
             'password' => Hash::make('password')
         ]);
+
+        User::create([
+            'name' => 'Василий2',
+            'surname' => 'Пупкин2',
+            'patronymic' => 'Василевич2',
+            'role' => User::ROLE_ADMIN,
+            'email' => 'test2@test.ru',
+            'password' => Hash::make('password')
+        ]);
     }
 }
