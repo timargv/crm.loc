@@ -6,7 +6,7 @@
             @include('layouts._nav')
             <div class="card">
                 <div class="card-header">
-                    Все Отпуска
+                    Отпуска
                     <div class="float-right">
                         <a href="{{ route('cabinet.vacations.create') }}" class="btn btn-sm btn-primary m-0">Добавить</a>
                     </div>
